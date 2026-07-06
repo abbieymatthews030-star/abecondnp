@@ -1,0 +1,86 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1e1e1e;
+}
+
+.editor-tabs {
+  display: flex;
+  background: #252526;
+  border-bottom: 1px solid #3e3e42;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 35px;
+  align-items: center;
+}
+
+.editor-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  height: 100%;
+  background: #2d2d30;
+  border-right: 1px solid #3e3e42;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.editor-tab:hover {
+  background: #3e3e42;
+}
+
+.editor-tab.active {
+  background: #1e1e1e;
+  border-bottom-color: #007acc;
+  color: #ffffff;
+}
+
+.tab-label {
+  font-size: 13px;
+  color: #cccccc;
+  flex: 1;
+}
+
+.editor-tab.active .tab-label {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.tab-close {
+  background: none;
+  border: none;
+  color: #858585;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 4px;
+  line-height: 1;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.tab-close:hover {
+  color: #d4d4d4;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.editor-content {
+  flex: 1;
+  overflow: hidden;
+  background: #1e1e1e;
+}
+
+.editor-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #858585;
+  font-size: 16px;
+}

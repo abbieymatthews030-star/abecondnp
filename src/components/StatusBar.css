@@ -1,0 +1,32 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  background: #007acc;
+  color: #ffffff;
+  padding: 0 16px;
+  font-size: 12px;
+  border-top: 1px solid #0066a6;
+  user-select: none;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.status-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.status-item:last-child {
+  border-right: none;
+}
+
+.status-spacer {
+  flex: 1;
+}
